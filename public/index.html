@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>AOSTIA</title>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="AOSTIA is a services provider with the main focus on users privacy, we currently provide emails, cloud and chat but there are more to come, so stay with us!">
+        <meta name="keywords" content="aostia, AOSTIA, cloud, chat, mail, aostia mail, aostia cloud">
+        <meta name="robots" content="index, follow">
+        <link rel="canonical" href="https://aostia.me/">
+        <meta name="Identifier-Url" content="https://aostia.me/">
+        <meta name="Rating" content="general">
+        <meta name="Distribution" content="global">
+        <meta name="Category" content="internet">
+        
+        <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="./styles/style.css">
+        <link rel="stylesheet" href="./styles/w3.css">
+        <link rel="stylesheet" href="./styles/fontawesome.css">
+    </head>
+    <body>
+        <main>
+            <div class="big-wrapper">
+                <img src="./images/shape.png" alt="" class="shape">
+
+                <header>
+                    <div class="container center">
+                        <div class="logo">
+                            <img src="./images/logo.png" alt="Logo">
+                            <h3>AOSTIA Jet</h3>
+                        </div>
+
+                        <div class="links">
+                            <ul>
+                                <li><a href="https://mail.aostia.com/">AOSTIA Mail</a></li>
+                                <li><a href="https://cloud.aostia.net/">AOSTIA Cloud</a></li>
+                                <li><a href="https://aostia.me/">AOSTIA Jet</a></li>
+                                <li><a id="toggleSignUp" class="btn toggleRegisterBtn">Sign up</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="overlay"></div>
+
+                        <div class="hamburger-menu">
+                            <div class="bar"></div>
+                        </div>
+                    </div>
+                </header>
+
+                <div id="home" class="showcase-area hidden">
+                    <div class="container">
+                        <div class="home">
+                            <div class="big-title">
+                                <h1>Fly with us,</h1>
+                                <h1>the sky's the limit!</h1>
+                            </div>
+                            <p class="text">Fly with ease and control your journey with our airline's innovative flight management software. Whether you're booking your flights or making changes to your itinerary, our platform provides you with the flexibility and convenience you need to manage your flights with confidence.</p>
+                            <div class="cta">
+                                <a id="toggleGetStarted" class="btn toggleLoginBtn">Get started</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="login" class="showcase-area hidden">
+                    <div class="container form-bg">
+                        <form id="loginForm" class="form">
+                            <div class="big-title">
+                                <h1>Login</h1>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label text" for="loginUsername">Username or Email:</label>
+                                <input class="form-input" type="text" id="loginUsername" name="usernameOrEmail" required>
+                            
+                                <label class="form-label text" for="loginPassword">Password:</label>
+                                <input class="form-input" type="password" id="loginPassword" name="password" required>
+                            </div>
+                            
+                            <button class="form-button" type="submit">Login</button>
+                            <a  id="toggleForgotPassword" class="form-link text toggleForgotPasswordBtn" style="margin-bottom: 0px; cursor: pointer;">Forgot your password?</a>
+                        </form>
+                        <div class="cta">
+                            <a id="toggleHomeLogin" class="btn form-btn toggleHomeBtn">Back</a>
+                            <a id="toggleRegister" class="btn form-btn toggleRegisterBtn">Register</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="register" class="showcase-area hidden">
+                    <div class="container form-bg">
+                        <form id="registerForm" class="form">
+                            <div class="big-title">
+                                <h1>Register</h1>
+                            </div>
+                            <div id="register-form1" class="form-group">
+                                <label class="form-label text" for="registerUsername">Username:</label>
+                                <input class="form-input" type="text" id="registerUsername" name="username" required>
+    
+                                <label class="form-label text" for="registerEmail">Email:</label>
+                                <input class="form-input" type="email" id="registerEmail" name="email" required>
+                            
+                                <label class="form-label text" for="registerPassword">Password:</label>
+                                <input class="form-input" type="password" id="registerPassword" name="password" required>
+                            </div>
+                            <div id="register-form2" class="form-group hidden">
+                                <label class="form-label text" for="registerName">First name:</label>
+                                <input class="form-input" type="text" id="registerName" name="name" required>
+
+                                <label class="form-label text" for="registerLastname">Last name:</label>
+                                <input class="form-input" type="text" id="registerLastname" name="lastname" required>
+    
+                                <label class="form-label text" for="registerPhone">Phone:</label>
+                                <input class="form-input" type="tel" id="registerPhone" name="phone" pattern="[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}">
+                            </div>
+                            <button id="register-next" class="form-button registerNextBtn" type="button">Next</button>
+                            <div id="register-btn-2" class="hidden">
+                                <button id="register-back" class="form-button form-button-2 registerBackBtn" style="max-width: fit-content;" type="button"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
+                                <button id="register-submit" class="form-button form-button-2" type="submit">Register</button>
+                            </div>
+                        </form>
+                        <div class="cta">
+                            <a id="toggleHomeRegister" class="btn form-btn toggleHomeBtn">Back</a>
+                            <a id="toggleLogin" class="btn form-btn toggleLoginBtn">Login</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="forgotPassword" class="showcase-area hidden">
+                    <div class="container form-bg">
+                        <form id="requestResetPasswordForm" class="form">
+                            <div class="big-title">
+                                <h1>Reset your password</h1>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label text" for="resetUsername">Username or Email:</label>
+                                <input class="form-input" type="text" id="resetUsername" name="usernameOrEmail" required>
+                            </div>
+                            
+                            <button class="form-button" type="submit">Send verification code</button>
+                        </form>
+                        <form id="verifyResetPasswordForm" class="form hidden">
+                            <div class="big-title">
+                                <h1>Reset your password</h1>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label text" for="resetCode">Verification code:</label>
+                                <input class="form-input" type="text" id="resetCode" name="code" required>
+                            </div>
+                            <button class="form-button" type="submit">Verify code</button>
+                        </form>
+                        <form id="resetPasswordForm" class="form hidden">
+                            <div class="big-title">
+                                <h1>Reset your password</h1>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label text" for="resetPassword">New password:</label>
+                                <input class="form-input" type="text" id="resetPassword" name="password" required>
+                            </div>
+                            <button class="form-button" type="submit">Reset password</button>
+                        </form>
+                        <div class="cta">
+                            <a id="toggleLoginReset" class="btn form-btn toggleLoginBtn">Login</a>
+                            <a id="toggleRegisterReset" class="btn form-btn toggleRegisterBtn">Register</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="diag" class="hidden">
+                    <div class="w3-center w3-border" id="boxWrap">
+                        <div id="boxTxt"></div>
+                        <input id="btnTxt" class="w3-btn w3-border" type="button" value="OK" onclick="dbox()">
+                    </div>
+                </div>
+    
+
+                <div class="bottom-area">
+                    <div class="container">
+                        <button id="toggle-theme" class="toggleThemeBtn">
+                            <i class="far fa-moon" aria-hidden="true"></i>
+                            <i class="far fa-sun" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="./scripts/theme.js"></script>
+        <script src="./scripts/fetcher.js"></script>
+        <script src="./scripts/app.js"></script>
+        <script src="./scripts/a81368914c.js"></script>
+
+    </body>
+</html>

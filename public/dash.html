@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Dashboard</title>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="./styles/dash.css">
+        <link rel="stylesheet" href="./styles/fontawesome.css">
+  </head>
+  <body class="big-wrapper">
+    <main>
+        <div>
+            <nav>
+                <div class="logo">
+                    <a href="javascript:window.history.replaceState({}, document.title, window.location.pathname);fetchPage()">Dashboard</a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+                <div class="notification">
+                    <a id="notification-icon" href="#"><i class="fas fa-bell"></i><span class="badge">3</span></a>
+                    <ul id="notification-menu" class="notification-menu">
+                        <div id="notification-loading" class="notification-loading">
+                            <i class="fas fa-spinner fa-spin"></i>
+                        </div>
+                    </ul>
+                </div>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+            <div class="sidebar">
+                <ul class="sidebar-links">
+                    <li><a id="airlines-btn" class="sidebarBtn" href="?page=airlines">Airlines</a></li>
+                    <li><a id="airplanes-btn" class="sidebarBtn" href="?page=airplanes">Airplanes</a></li>
+                    <li><a id="airports-btn" class="sidebarBtn" href="?page=airports">Airports</a></li>
+                    <li><a id="flights-btn" class="sidebarBtn" href="?page=flights">Flights</a></li>
+                    <li><a id="pilots-btn" class="sidebarBtn" href="?page=pilots">Pilots</a></li>
+                    <li><a id="seats-btn" class="sidebarBtn" href="?page=seats">Seats</a></li>
+                    <li><a id="users-btn" class="sidebarBtn" href="?page=users">Users</a></li>
+                    <li><a id="profile-btn" class="sidebarBtn" href="?page=profile">Profile</a></li>
+                </ul>
+                <div class="theme-div">
+                    <button id="toggle-theme" class="toggleThemeBtn">
+                        <i class="far fa-moon" aria-hidden="true"></i>
+                        <i class="far fa-sun" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="tiles-container"></div>
+            <div id="toast"></div>
+        </div>
+    </main>
+    <script src="./scripts/theme.js"></script>
+    <script src="./scripts/fetcher.js"></script>
+    <script src="./scripts/notification.js"></script>
+    <script src="./scripts/chart.js"></script>
+    <script src="./scripts/dash.js"></script>
+  </body>
+</html>
