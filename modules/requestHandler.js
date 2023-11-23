@@ -13,9 +13,8 @@ const requestLimiter = rateLimit({
 
 const speedLimiter = slowDown({
 	windowMs: 60 * 1000,
-	delayAfter: 30,
-	delayMs: 500,
-	skipFailedRequests: true,
+	delayAfter: 5,
+	delayMs: (hits) => hits * 100,
 });
 
 function checkSystemLoad(req, res, next) {
